@@ -224,7 +224,7 @@ app.get(/^\/p\/(.*)/, async (req, res) => {
         <body>
             <script>
                 // Redirigir al index usando el hash que lee tu script.js
-                window.location.href = "https://asereshops.onrender.com/" + encodeURIComponent("${id}");
+                window.location.href = "https://asereshops.onrender.com/#" + encodeURIComponent("${id}");
             </script>
         </body>
         </html>`);
