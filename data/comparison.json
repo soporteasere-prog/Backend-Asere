@@ -1,0 +1,72 @@
+[
+  {
+    "ip": "185.236.200.244",
+    "pais": "US",
+    "fecha_hora_entrada": "2026-03-07 04:51:25",
+    "origen": "http://127.0.0.1:5500/",
+    "afiliado": "Ninguno",
+    "duracion_sesion_segundos": 0,
+    "tiempo_carga_pagina_ms": 0,
+    "nombre_comprador": "test",
+    "telefono_comprador": "123123123",
+    "nombre_persona_entrega": "nombre test",
+    "telefono_persona_entrega": "numero test",
+    "correo_comprador": "test@test.test",
+    "direccion_envio": "Cuba",
+    "compras": [
+      {
+        "id": "prod_1768441690510_pmrqvhwq7",
+        "name": "Caja de Pechuga de Pollo (12Kg)",
+        "quantity": 1,
+        "type": "product",
+        "unitPrice": 95.99,
+        "discount": 0
+      }
+    ],
+    "precio_compra_total": "95.99",
+    "navegador": "Chrome",
+    "sistema_operativo": "Windows",
+    "tipo_usuario": "Recurrente",
+    "tiempo_promedio_pagina": 0,
+    "fuente_trafico": "http://127.0.0.1:5500/"
+  },
+  {
+    "ip": "185.236.200.244",
+    "pais": "US",
+    "fecha_hora_entrada": "2026-03-07 05:14:23",
+    "origen": "http://127.0.0.1:5500/",
+    "afiliado": "Ninguno",
+    "duracion_sesion_segundos": 0,
+    "tiempo_carga_pagina_ms": 0,
+    "nombre_comprador": "test",
+    "telefono_comprador": "asdasdasdad asdasdasd",
+    "nombre_persona_entrega": "persona",
+    "telefono_persona_entrega": "1234124",
+    "correo_comprador": "test@test.test",
+    "direccion_envio": "test",
+    "compras": [
+      {
+        "id": "prod_1768441690510_pmrqvhwq7",
+        "name": "Caja de Pechuga de Pollo (12Kg)",
+        "quantity": 1,
+        "type": "product",
+        "unitPrice": 95.99,
+        "discount": 0
+      },
+      {
+        "id": "prod_1768509219912_h61h4xal8",
+        "name": "Pernil asado de 20lbs",
+        "quantity": 1,
+        "type": "product",
+        "unitPrice": 60,
+        "discount": 0
+      }
+    ],
+    "precio_compra_total": "155.99",
+    "navegador": "Chrome",
+    "sistema_operativo": "Windows",
+    "tipo_usuario": "Recurrente",
+    "tiempo_promedio_pagina": 0,
+    "fuente_trafico": "http://127.0.0.1:5500/"
+  }
+]
