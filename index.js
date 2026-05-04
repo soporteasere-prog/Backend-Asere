@@ -161,7 +161,7 @@ app.get(/^\/p\/(.*)/, async (req, res) => {
         <html lang="es">
         <head>
             <meta charset="UTF-8">
-            <meta property="og:title" content="Producto no encontrado - Buquenqe" />
+            <meta property="og:title" content="Producto no encontrado - Asere" />
 
             <link rel="icon" href="https://asereshops.onrender.com/Images/favicon.ico" type="image/x-icon" />
             <link rel="shortcut icon" href="https://asereshops.onrender.com/Images/favicon.ico" />
@@ -187,7 +187,7 @@ app.get(/^\/p\/(.*)/, async (req, res) => {
 
         // Datos para Meta Tags
         const nombre = product.nombre || "Producto";
-        const descripcion = product.descripcion || "Disponible en Buquenqe";
+        const descripcion = product.descripcion || "Disponible en Asere Shops";
         const imagen = (product.imagenes && product.imagenes.length) 
             ? `https://raw.githubusercontent.com/soporteasere-prog/Asereshops/refs/heads/main/Images/products/${encodeURIComponent(product.imagenes[0])}`
             : "https://asereshops.onrender.com/Images/social-share-banner.jpg";
@@ -204,7 +204,7 @@ app.get(/^\/p\/(.*)/, async (req, res) => {
             <link rel="icon" href="https://asereshops.onrender.com/Images/favicon.ico" type="image/x-icon" />
             <link rel="shortcut icon" href="https://asereshops.onrender.com/Images/favicon.ico" />
 
-            <meta property="og:site_name" content="Buquenque Shop" />
+            <meta property="og:site_name" content="Asere Shops" />
 
             <meta property="og:title" content="${_escapeHtml(nombre)}" />
             <meta property="og:description" content="${_escapeHtml(descripcion)}" />
