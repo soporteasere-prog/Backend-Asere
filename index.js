@@ -139,7 +139,7 @@ app.get(/^\/p\/(.*)/, async (req, res) => {
 
     console.log(`[Backend] Procesando producto: "${id}"`);
 
-    const PRODUCTS_URL = "https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Json/products.json";
+    const PRODUCTS_URL = "https://raw.githubusercontent.com/soporteasere-prog/Asereshops/refs/heads/main/Json/products.json";
 
     try {
         const response = await fetch(PRODUCTS_URL);
@@ -163,12 +163,12 @@ app.get(/^\/p\/(.*)/, async (req, res) => {
             <meta charset="UTF-8">
             <meta property="og:title" content="Producto no encontrado - Buquenqe" />
 
-            <link rel="icon" href="https://www.buquenqe.com/Images/favicon.ico" type="image/x-icon" />
-            <link rel="shortcut icon" href="https://www.buquenqe.com/Images/favicon.ico" />
+            <link rel="icon" href="https://asereshops.onrender.com/Images/favicon.ico" type="image/x-icon" />
+            <link rel="shortcut icon" href="https://asereshops.onrender.com/Images/favicon.ico" />
 
-            <meta property="og:image" content="https://www.buquenqe.com/Images/social-share-banner.jpg" />
+            <meta property="og:image" content="https://asereshops.onrender.com/Images/social-share-banner.jpg" />
         </head>
-        <body><script>window.location.href = "https://www.buquenqe.com/index.html";</script></body>
+        <body><script>window.location.href = "https://asereshops.onrender.com/index.html";</script></body>
         </html>`);
         }
 
@@ -189,11 +189,11 @@ app.get(/^\/p\/(.*)/, async (req, res) => {
         const nombre = product.nombre || "Producto";
         const descripcion = product.descripcion || "Disponible en Buquenqe";
         const imagen = (product.imagenes && product.imagenes.length) 
-            ? `https://raw.githubusercontent.com/HCoreBeat/Buquenque/refs/heads/main/Images/products/${encodeURIComponent(product.imagenes[0])}`
-            : "https://www.buquenqe.com/Images/social-share-banner.jpg";
+            ? `https://raw.githubusercontent.com/soporteasere-prog/Asereshops/refs/heads/main/Images/products/${encodeURIComponent(product.imagenes[0])}`
+            : "https://asereshops.onrender.com/Images/social-share-banner.jpg";
 
         // IMPORTANTE: URL absoluta para WhatsApp
-        const canonicalUrl = `https://www.buquenqe.com/p/${encodeURIComponent(id)}`;
+        const canonicalUrl = `https://asereshops.onrender.com/p/${encodeURIComponent(id)}`;
 
         res.send(`<!DOCTYPE html>
         <html lang="es">
@@ -201,8 +201,8 @@ app.get(/^\/p\/(.*)/, async (req, res) => {
             <meta charset="UTF-8">
             <title>${_escapeHtml(nombre)}</title>
 
-            <link rel="icon" href="https://www.buquenqe.com/Images/favicon.ico" type="image/x-icon" />
-            <link rel="shortcut icon" href="https://www.buquenqe.com/Images/favicon.ico" />
+            <link rel="icon" href="https://asereshops.onrender.com/Images/favicon.ico" type="image/x-icon" />
+            <link rel="shortcut icon" href="https://asereshops.onrender.com/Images/favicon.ico" />
 
             <meta property="og:site_name" content="Buquenque Shop" />
 
@@ -224,7 +224,7 @@ app.get(/^\/p\/(.*)/, async (req, res) => {
         <body>
             <script>
                 // Redirigir al index usando el hash que lee tu script.js
-                window.location.href = "https://www.buquenqe.com/index.html#" + encodeURIComponent("${id}");
+                window.location.href = "https://asereshops.onrender.com/" + encodeURIComponent("${id}");
             </script>
         </body>
         </html>`);
