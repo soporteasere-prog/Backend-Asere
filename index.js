@@ -42,6 +42,7 @@ const allowedOrigins = [
     "https://asereshops.onrender.com",
     "https://backend-asere.onrender.com",
     "https://analytics-asere.onrender.com",
+    "https://analytics-asere-shops.onrender.com",
     "http://127.0.0.1:5500",
     "http://localhost:10000",
     "http://localhost:5500"
@@ -347,7 +348,7 @@ app.get("/obtener-estadisticas", async (req, res) => {
 });
 
 // URL para enviar correos (script de Google Apps Script configurado como Web App)
-const GOOGLE_APPS_SCRIPT_CORREO_URL = "https://script.google.com/macros/s/AKfycbzpQpWMCQ1TPkPNXfUI7tTTC9qPn_q-Kj6GpL01MVCyf7KylEvkX0b1dV4YNl64QvGz/exec";
+const GOOGLE_APPS_SCRIPT_CORREO_URL = "https://script.google.com/macros/s/AKfycbycb7klm1Mo2MwwjgrE_6vL6angqdfVg1W9e9hLDpMVMXz-zF2NjoGrsBzBI2Vsc9M/exec";
 // Ruta POST para recibir los datos del pedido desde el frontend
 app.post('/send-pedido', async (req, res) => {
     console.log('📦 Recibida solicitud de pedido desde el frontend.');
@@ -459,7 +460,7 @@ app.get("/api/server-status", async (req, res) => {
 
 // Modificar la función para guardar automáticamente en comparison.json
 async function compareLocalAndRemoteData() {
-    const remoteUrl = "https://raw.githubusercontent.com/HCoreBeat/Analytics-Buquenque/refs/heads/main/Json/my_data.json";
+    const remoteUrl = "https://raw.githubusercontent.com/soporteasere-prog/Analytics-Asere-Shops/refs/heads/main/Json/my_data.json";
     const comparisonFilePath = path.join(directoryPath, "comparison.json");
     let newOrders = [];
     let release;
