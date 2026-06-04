@@ -42,6 +42,10 @@ const allowedOrigins = [
     "https://asereshops.onrender.com",
     "https://backend-asere.onrender.com",
     "https://analytics-asere-shops.onrender.com",
+    'https://localhost',                      // Capacitor Android
+    'capacitor://localhost',                  // Capacitor iOS
+    'http://localhost',                       // Pruebas en navegador
+    'http://localhost:8100',                   // Ionic Dev Server
     "http://127.0.0.1:5500",
     "http://localhost:10000",
     "http://localhost:5500"
