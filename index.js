@@ -39,6 +39,7 @@ function addLog(message) {
 // Configuración de CORS
 const allowedOrigins = [
     "https://www.asereshops.com",
+    "https://asereshops.com",
     "https://asereshops.onrender.com",
     "https://backend-asere.onrender.com",
     "https://analytics-asere-shops.onrender.com",
